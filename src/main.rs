@@ -8,7 +8,7 @@ use dotenv::dotenv;
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     dotenv().ok();
-    
+    print!("\x1B[2J\x1B[1;1H");
     let pw = env::var("BSKY_PW").unwrap();            
     let mail = env::var("BSKY_MAIL").unwrap();
     let agent = BskyAgent::builder().build().await?;
