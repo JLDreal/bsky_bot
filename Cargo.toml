@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 bsky-sdk = "0.1.12"
+dotenv = "0.15.0"
 tokio = { version = "1.41.0", features = ["full"] }
 
 [dependencies.openssl]
